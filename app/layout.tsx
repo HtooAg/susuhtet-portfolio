@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	title: "Su Su Htet - Financial Advisor & MDRT Qualifier",
 	description:
 		"Professional financial advisor specializing in life insurance and investment solutions. MDRT qualified with proven track record.",
-	generator: "v0.app",
+	generator: "Htoo Aung Wai - John (Software Developer)",
 	icons: {
 		icon: "/images/susuhtet.jpeg",
 		apple: "/images/susuhtet.jpeg",
