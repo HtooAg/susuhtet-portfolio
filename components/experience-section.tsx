@@ -18,7 +18,7 @@ const experiences = [
 			"Handle customer complaints, claims, inquiries to maximize customer satisfaction",
 			"Have an excellent experience with follow up and strong communication with customer to get referrals",
 			"Manage Business Meetings and schedule appointments",
-			"75% achieves to MDRT target sale for 2025",
+			"Successfully achieved MDRT qualification for 2025",
 			"Recent record of Highest sale for new Product in the month of launching",
 		],
 	},

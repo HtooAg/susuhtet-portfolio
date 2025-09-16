@@ -8,7 +8,7 @@ const achievements = [
 	{
 		icon: Award,
 		title: "MDRT Qualified",
-		description: "75% achievement to MDRT target sale for 2025",
+		description: "Successfully achieved MDRT qualification for 2025",
 	},
 	{
 		icon: Users,

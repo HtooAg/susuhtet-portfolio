@@ -21,7 +21,7 @@ const sourceSans = Source_Sans_Pro({
 });
 
 export const metadata: Metadata = {
-	title: "Su Su Htet - Financial Advisor & MDRT Qualifier",
+	title: "Su Htet - Financial Advisor & MDRT Qualifier",
 	description:
 		"Professional financial advisor specializing in life insurance and investment solutions. MDRT qualified with proven track record.",
 	generator: "Htoo Aung Wai - John (Software Developer)",

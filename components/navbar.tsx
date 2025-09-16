@@ -152,13 +152,13 @@ export function Navbar() {
 						>
 							<Image
 								src="/images/logo.jpg"
-								alt="Su Su Htet"
+								alt="Su Htet"
 								width={40}
 								height={40}
 								className="rounded-full object-cover object-top"
 							/>
 							<span className="font-playfair font-bold text-xl text-primary">
-								Su Su Htet
+								Su Htet
 							</span>
 						</motion.div>
 
@@ -265,14 +265,14 @@ export function Navbar() {
 									<div className="flex items-center space-x-3">
 										<Image
 											src="/images/logo.jpg"
-											alt="Su Su Htet"
+											alt="Su Htet"
 											width={50}
 											height={50}
 											className="rounded-full object-cover object-top"
 										/>
 										<div>
 											<span className="font-playfair font-bold text-xl text-primary block">
-												Su Su Htet
+												Su Htet
 											</span>
 											<span className="text-sm text-muted-foreground">
 												Financial Services Consultant

@@ -19,7 +19,7 @@ const posts = [
 
 ကျွန်မရဲ့အောင်မြင်မှုနဲ့ client တွေယုံကြည်ပေးမှုဟာ "ကိုင်းကျွန်းမီ ကျွန်းကိုင်းမီ"ပါပဲနော်။ ဆက်လက်ကြိုးစားပါဦးမယ်ရှင်။ 
 
-Su Su Htet 
+Su Htet 
 MDRT Qualified Advisor 
 AIA Premier Club Member 
 Infinity Wealth`,
@@ -56,7 +56,7 @@ Retirement plan အတွက်စဉ်းစားတဲ့အခါ Insurance
 
 ဇူလိုင်လ၊ ၂၀၂၂
 
-Su Su Htet
+Su Htet
 MDRT 2025
 AIA Premier Member 
 InfinityWealth`,

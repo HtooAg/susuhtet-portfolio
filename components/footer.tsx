@@ -59,13 +59,13 @@ export function Footer() {
 						<div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
 							<Image
 								src="/images/logo.jpg"
-								alt="Su Su Htet"
+								alt="Su Htet"
 								width={40}
 								height={40}
 								className="rounded-full object-cover object-top"
 							/>
 							<span className="font-playfair font-bold text-2xl text-primary">
-								Su Su Htet
+								Su Htet
 							</span>
 						</div>
 						<p className="text-muted-foreground leading-relaxed mb-6 max-w-md mx-auto md:mx-0">
@@ -170,7 +170,7 @@ export function Footer() {
 					className="border-t border-border mt-8 pt-8 text-center"
 				>
 					<p className="text-muted-foreground text-sm mb-3 md:mb-3 text-center ">
-						© 2025 Su Su Htet. All rights reserved. MDRT Qualified
+						© 2025 Su Htet. All rights reserved. MDRT Qualified
 						Advisor.
 					</p>
 					<div className="flex items-center justify-center space-x-2 text-muted-foreground">

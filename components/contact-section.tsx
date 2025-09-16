@@ -23,7 +23,7 @@ const contactInfo = [
 	{
 		icon: Linkedin,
 		label: "LinkedIn",
-		value: "Su Su Htet",
+		value: "Su Htet",
 		href: "http://linkedin.com/in/su-su-htet-0837b0169",
 	},
 	{
@@ -37,7 +37,7 @@ const contactInfo = [
 export function ContactSection() {
 	const handleWhatsAppContact = () => {
 		const message = encodeURIComponent(
-			"Hello Su Su Htet, I'm interested in learning more about your financial services."
+			"Hello Su Htet, I'm interested in learning more about your financial services."
 		);
 		window.open(`https://wa.me/971555238077?text=${message}`, "_blank");
 	};
@@ -146,12 +146,12 @@ export function ContactSection() {
 											meeting sales targets. Experienced
 											in providing tailored financial
 											protection solutions, achieving 80%
-											persistency rates, and reaching 75%
-											of MDRT target in 2024. Recognized
-											for driving new product sales,
-											generating leads, and ensuring
-											long-term client satisfaction and
-											loyalty.
+											persistency rates, and successfully
+											achieved MDRT qualification in 2024.
+											Recognized for driving new product
+											sales, generating leads, and
+											ensuring long-term client
+											satisfaction and loyalty.
 										</p>
 
 										<motion.div

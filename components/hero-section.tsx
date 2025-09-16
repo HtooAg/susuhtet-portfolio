@@ -28,7 +28,7 @@ export function HeroSection() {
 	const handleGetStarted = () => {
 		console.log("Get Started clicked");
 		const message = encodeURIComponent(
-			"Hello Su Su Htet, I'm interested in learning more about your financial services and would like to get started."
+			"Hello Su Htet, I'm interested in learning more about your financial services and would like to get started."
 		);
 		window.open(`https://wa.me/971555238077?text=${message}`, "_blank");
 	};
@@ -71,7 +71,7 @@ export function HeroSection() {
 							transition={{ delay: 0.2, duration: 0.6 }}
 						>
 							<h1 className="font-playfair text-5xl lg:text-7xl font-bold text-foreground leading-tight">
-								Su Su Htet
+								Su Htet
 							</h1>
 							<div className="h-1 w-24 gradient-gold rounded-full mt-4" />
 						</motion.div>
@@ -104,11 +104,11 @@ export function HeroSection() {
 							className="flex flex-col sm:flex-row gap-4 z-20 relative"
 						>
 							<button
-								onClick={handleGetStarted}
+								onClick={scrollToAbout}
 								className="bg-gradient-to-r from-[#b8842a] to-[#c59952] hover:from-[#c59952] hover:to-[#d4af37] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-200 hover:scale-[1.02] hover:shadow-lg border-0 cursor-pointer z-20 relative flex items-center justify-center"
 								type="button"
 							>
-								<MessageCircle className="mr-2 h-4 w-4" />
+								<ArrowDown className="mr-2 h-4 w-4" />
 								Get Started
 							</button>
 							<button
@@ -199,7 +199,7 @@ export function HeroSection() {
 							>
 								<Image
 									src="/images/susuhtet.jpeg"
-									alt="Su Su Htet"
+									alt="Su Htet"
 									fill
 									className="object-cover object-top scale-110"
 									priority
