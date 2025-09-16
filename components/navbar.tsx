@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { TranslationToggle } from "@/components/translation-toggle";
+import { ManualTranslatedText } from "@/components/manual-translated-text";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
@@ -158,7 +160,9 @@ export function Navbar() {
 								className="rounded-full object-cover object-top"
 							/>
 							<span className="font-playfair font-bold text-xl text-primary">
-								Su Htet
+								<ManualTranslatedText>
+									Su Htet
+								</ManualTranslatedText>
 							</span>
 						</motion.div>
 
@@ -177,7 +181,9 @@ export function Navbar() {
 									whileTap={{ scale: 0.98 }}
 									transition={{ duration: 0.1 }}
 								>
-									{item.name}
+									<ManualTranslatedText>
+										{item.name}
+									</ManualTranslatedText>
 									{activeSection ===
 										item.href.substring(1) && (
 										<motion.div
@@ -193,13 +199,15 @@ export function Navbar() {
 									)}
 								</motion.button>
 							))}
-							<div className="ml-4">
+							<div className="ml-4 flex items-center space-x-2">
+								<TranslationToggle />
 								<ThemeToggle />
 							</div>
 						</div>
 
 						{/* Mobile Menu Button */}
-						<div className="md:hidden flex items-center space-x-4">
+						<div className="md:hidden flex items-center space-x-2">
+							<TranslationToggle />
 							<ThemeToggle />
 							<Button
 								variant="ghost"
@@ -272,10 +280,15 @@ export function Navbar() {
 										/>
 										<div>
 											<span className="font-playfair font-bold text-xl text-primary block">
-												Su Htet
+												<ManualTranslatedText>
+													Su Htet
+												</ManualTranslatedText>
 											</span>
 											<span className="text-sm text-muted-foreground">
-												Financial Services Consultant
+												<ManualTranslatedText>
+													Financial Services
+													Consultant
+												</ManualTranslatedText>
 											</span>
 										</div>
 									</div>
@@ -317,7 +330,9 @@ export function Navbar() {
 												}}
 												whileHover={{ x: 8 }}
 											>
-												{item.name}
+												<ManualTranslatedText>
+													{item.name}
+												</ManualTranslatedText>
 											</motion.button>
 										))}
 									</div>

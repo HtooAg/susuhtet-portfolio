@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageCircle, Linkedin } from "lucide-react";
+import { ManualTranslatedText } from "@/components/manual-translated-text";
 
 const contactInfo = [
 	{
@@ -53,13 +54,17 @@ export function ContactSection() {
 					className="text-center mb-16"
 				>
 					<h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-4">
-						Get In Touch
+						<ManualTranslatedText>
+							Get In Touch
+						</ManualTranslatedText>
 					</h2>
 					<div className="h-1 w-24 gradient-gold rounded-full mx-auto mb-8" />
 					<p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-						Ready to secure your financial future? Let's discuss how
-						I can help you achieve your financial goals with
-						tailored insurance and investment solutions.
+						<ManualTranslatedText>
+							Ready to secure your financial future? Let's discuss
+							how I can help you achieve your financial goals with
+							tailored insurance and investment solutions.
+						</ManualTranslatedText>
 					</p>
 				</motion.div>
 
@@ -74,7 +79,9 @@ export function ContactSection() {
 					>
 						<div>
 							<h3 className="font-playfair text-2xl font-semibold text-foreground mb-6">
-								Contact Information
+								<ManualTranslatedText>
+									Contact Information
+								</ManualTranslatedText>
 							</h3>
 							<div className="space-y-4">
 								{contactInfo.map((info, index) => (
@@ -104,10 +111,14 @@ export function ContactSection() {
 										</div>
 										<div>
 											<p className="font-medium text-foreground">
-												{info.label}
+												<ManualTranslatedText>
+													{info.label}
+												</ManualTranslatedText>
 											</p>
 											<p className="text-muted-foreground">
-												{info.value}
+												<ManualTranslatedText>
+													{info.value}
+												</ManualTranslatedText>
 											</p>
 										</div>
 									</motion.a>
@@ -134,24 +145,30 @@ export function ContactSection() {
 											<MessageCircle className="h-10 w-10 text-white" />
 										</motion.div>
 										<h4 className="font-playfair text-xl font-semibold text-foreground mb-2">
-											WhatsApp Contact
+											<ManualTranslatedText>
+												WhatsApp Contact
+											</ManualTranslatedText>
 										</h4>
 									</div>
 
 									<div className="bg-muted/50 rounded-lg p-6 text-center">
 										<p className="text-muted-foreground leading-relaxed mb-6">
-											Results-driven financial advisor
-											with strong client relationship
-											skills and a proven record of
-											meeting sales targets. Experienced
-											in providing tailored financial
-											protection solutions, achieving 80%
-											persistency rates, and successfully
-											achieved MDRT qualification in 2024.
-											Recognized for driving new product
-											sales, generating leads, and
-											ensuring long-term client
-											satisfaction and loyalty.
+											<ManualTranslatedText>
+												Results-driven financial advisor
+												with strong client relationship
+												skills and a proven record of
+												meeting sales targets.
+												Experienced in providing
+												tailored financial protection
+												solutions, achieving 80%
+												persistency rates, and
+												successfully achieved MDRT
+												qualification in 2024.
+												Recognized for driving new
+												product sales, generating leads,
+												and ensuring long-term client
+												satisfaction and loyalty.
+											</ManualTranslatedText>
 										</p>
 
 										<motion.div
@@ -164,7 +181,9 @@ export function ContactSection() {
 												size="lg"
 											>
 												<MessageCircle className="mr-2 h-6 w-6" />
-												WhatsApp Message
+												<ManualTranslatedText>
+													WhatsApp Message
+												</ManualTranslatedText>
 											</Button>
 										</motion.div>
 										{/* Quick Response Alert */}
@@ -172,13 +191,17 @@ export function ContactSection() {
 											<div className="flex items-center gap-3 mb-2 text-center ">
 												<div className="w-3 h-3 bg-gradient-to-r from-[#b8842a] to-[#c59952] rounded-full animate-pulse"></div>
 												<span className="font-semibold text-[#b8842a]">
-													Quick Response
+													<ManualTranslatedText>
+														Quick Response
+													</ManualTranslatedText>
 												</span>
 											</div>
 											<p className="text-sm text-muted-foreground text-center">
-												I typically respond within 2-4
-												hours during business hours (9
-												AM - 6 PM GST)
+												<ManualTranslatedText>
+													I typically respond within
+													2-4 hours during business
+													hours (9 AM - 6 PM GST)
+												</ManualTranslatedText>
 											</p>
 										</div>
 									</div>

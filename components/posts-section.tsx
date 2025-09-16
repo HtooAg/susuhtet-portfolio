@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
+import { ManualTranslatedText } from "@/components/manual-translated-text";
 
 const posts = [
 	{
@@ -90,12 +91,14 @@ export function PostsSection() {
 					className="text-center mb-16"
 				>
 					<h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-4">
-						Latest Posts
+						<ManualTranslatedText>Posts</ManualTranslatedText>
 					</h2>
 					<div className="h-1 w-24 gradient-gold rounded-full mx-auto mb-8" />
 					<p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-						Insights and achievements in financial services and
-						client success stories
+						<ManualTranslatedText>
+							Insights and achievements in financial services and
+							client success stories
+						</ManualTranslatedText>
 					</p>
 				</motion.div>
 
@@ -117,23 +120,31 @@ export function PostsSection() {
 										className="object-cover object-center transition-transform duration-300 hover:scale-105"
 									/>
 									<div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
-										{post.date}
+										<ManualTranslatedText>
+											{post.date}
+										</ManualTranslatedText>
 									</div>
 								</div>
 
 								<CardContent className="p-6">
 									<h3 className="font-playfair text-xl font-semibold text-foreground mb-3 line-clamp-2">
-										{post.title}
+										<ManualTranslatedText>
+											{post.title}
+										</ManualTranslatedText>
 									</h3>
 
 									<div className="text-muted-foreground leading-relaxed mb-4">
 										{expandedPost === post.id ? (
 											<div className="whitespace-pre-line">
-												{post.fullContent}
+												<ManualTranslatedText>
+													{post.fullContent}
+												</ManualTranslatedText>
 											</div>
 										) : (
 											<div className="line-clamp-3">
-												{post.excerpt}
+												<ManualTranslatedText>
+													{post.excerpt}
+												</ManualTranslatedText>
 											</div>
 										)}
 									</div>
@@ -149,12 +160,16 @@ export function PostsSection() {
 											{expandedPost === post.id ? (
 												<>
 													<ChevronUp className="mr-2 h-4 w-4" />
-													See Less
+													<ManualTranslatedText>
+														See Less
+													</ManualTranslatedText>
 												</>
 											) : (
 												<>
 													<ChevronDown className="mr-2 h-4 w-4" />
-													See More
+													<ManualTranslatedText>
+														See More
+													</ManualTranslatedText>
 												</>
 											)}
 										</Button>
@@ -171,7 +186,9 @@ export function PostsSection() {
 													className="flex-1 gradient-gold hover:gradient-gold-hover text-white transition-all duration-300"
 												>
 													<ExternalLink className="mr-2 h-4 w-4" />
-													Go Live
+													<ManualTranslatedText>
+														Go Live
+													</ManualTranslatedText>
 												</Button>
 											</motion.div>
 										)}

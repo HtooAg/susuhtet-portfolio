@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import { ManualTranslatedText } from "@/components/manual-translated-text";
 
 const experiences = [
 	{
@@ -60,12 +61,14 @@ export function ExperienceSection() {
 					className="text-center mb-16"
 				>
 					<h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-4">
-						Experience
+						<ManualTranslatedText>Experience</ManualTranslatedText>
 					</h2>
 					<div className="h-1 w-24 gradient-gold rounded-full mx-auto mb-8" />
 					<p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-						A journey of professional growth and achievement in
-						financial services
+						<ManualTranslatedText>
+							A journey of professional growth and achievement in
+							financial services
+						</ManualTranslatedText>
 					</p>
 				</motion.div>
 
@@ -106,14 +109,20 @@ export function ExperienceSection() {
 											<div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
 												<div>
 													<h3 className="font-playfair text-2xl font-semibold text-foreground mb-1">
-														{experience.title}
+														<ManualTranslatedText>
+															{experience.title}
+														</ManualTranslatedText>
 													</h3>
 													<p className="text-primary font-semibold text-lg">
-														{experience.company}
+														<ManualTranslatedText>
+															{experience.company}
+														</ManualTranslatedText>
 													</p>
 												</div>
 												<span className="text-muted-foreground font-medium bg-muted px-3 py-1 rounded-full text-sm mt-2 lg:mt-0 w-fit">
-													{experience.period}
+													<ManualTranslatedText>
+														{experience.period}
+													</ManualTranslatedText>
 												</span>
 											</div>
 
@@ -149,7 +158,11 @@ export function ExperienceSection() {
 														>
 															<div className="w-2 h-2 gradient-gold rounded-full mt-2 flex-shrink-0" />
 															<span className="leading-relaxed">
-																{achievement}
+																<ManualTranslatedText>
+																	{
+																		achievement
+																	}
+																</ManualTranslatedText>
 															</span>
 														</motion.li>
 													)

@@ -5,6 +5,7 @@ import {
 	Source_Sans_3 as Source_Sans_Pro,
 } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { TranslationProvider } from "@/contexts/translation-context";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -26,8 +27,8 @@ export const metadata: Metadata = {
 		"Professional financial advisor specializing in life insurance and investment solutions. MDRT qualified with proven track record.",
 	generator: "Htoo Aung Wai - John (Software Developer)",
 	icons: {
-		icon: "/images/susuhtet.jpeg",
-		apple: "/images/susuhtet.jpeg",
+		icon: "/images/logo.jpg",
+		apple: "/images/logo.jpg",
 	},
 };
 
@@ -49,7 +50,7 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange={false}
 				>
-					{children}
+					<TranslationProvider>{children}</TranslationProvider>
 				</ThemeProvider>
 			</body>
 		</html>

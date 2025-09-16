@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Users, TrendingUp, Shield } from "lucide-react";
+import { ManualTranslatedText } from "@/components/manual-translated-text";
 
 const achievements = [
 	{
@@ -40,15 +41,17 @@ export function AboutSection() {
 					className="text-center mb-16"
 				>
 					<h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-4">
-						About Me
+						<ManualTranslatedText>About Me</ManualTranslatedText>
 					</h2>
 					<div className="h-1 w-24 gradient-gold rounded-full mx-auto mb-8" />
 					<p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-						Results-driven financial advisor with a proven track
-						record of building strong client relationships and
-						consistently meeting sales targets. Skilled in assessing
-						client needs and providing tailored financial protection
-						solutions.
+						<ManualTranslatedText>
+							Results-driven financial advisor with a proven track
+							record of building strong client relationships and
+							consistently meeting sales targets. Skilled in
+							assessing client needs and providing tailored
+							financial protection solutions.
+						</ManualTranslatedText>
 					</p>
 				</motion.div>
 
@@ -71,10 +74,14 @@ export function AboutSection() {
 										<achievement.icon className="h-8 w-8 text-white" />
 									</motion.div>
 									<h3 className="font-playfair text-xl font-semibold text-foreground mb-2">
-										{achievement.title}
+										<ManualTranslatedText>
+											{achievement.title}
+										</ManualTranslatedText>
 									</h3>
 									<p className="text-muted-foreground text-sm leading-relaxed">
-										{achievement.description}
+										<ManualTranslatedText>
+											{achievement.description}
+										</ManualTranslatedText>
 									</p>
 								</CardContent>
 							</Card>

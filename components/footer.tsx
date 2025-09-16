@@ -1,8 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail, ExternalLink, MessageCircle, Heart, Linkedin } from "lucide-react";
+import {
+	Phone,
+	Mail,
+	ExternalLink,
+	MessageCircle,
+	Heart,
+	Linkedin,
+} from "lucide-react";
 import Image from "next/image";
+import { ManualTranslatedText } from "@/components/manual-translated-text";
 
 const quickLinks = [
 	{ name: "Home", href: "#home" },
@@ -65,14 +73,18 @@ export function Footer() {
 								className="rounded-full object-cover object-top"
 							/>
 							<span className="font-playfair font-bold text-2xl text-primary">
-								Su Htet
+								<ManualTranslatedText>
+									Su Htet
+								</ManualTranslatedText>
 							</span>
 						</div>
 						<p className="text-muted-foreground leading-relaxed mb-6 max-w-md mx-auto md:mx-0">
-							MDRT Qualified Financial Advisor & AIA Premier Club
-							Member dedicated to helping clients achieve their
-							financial goals through tailored insurance and
-							investment solutions.
+							<ManualTranslatedText>
+								MDRT Qualified Financial Advisor & AIA Premier
+								Club Member dedicated to helping clients achieve
+								their financial goals through tailored insurance
+								and investment solutions.
+							</ManualTranslatedText>
 						</p>
 						<div className="flex justify-center md:justify-start space-x-4">
 							{socialLinks.map((social) => (
@@ -110,7 +122,9 @@ export function Footer() {
 						className="text-center md:text-left"
 					>
 						<h3 className="font-playfair font-semibold text-lg text-foreground mb-4">
-							Quick Links
+							<ManualTranslatedText>
+								Quick Links
+							</ManualTranslatedText>
 						</h3>
 						<ul className="space-y-2">
 							{quickLinks.map((link) => (
@@ -121,7 +135,9 @@ export function Footer() {
 										}
 										className="text-muted-foreground hover:text-primary transition-all duration-200 hover:scale-105 cursor-pointer"
 									>
-										{link.name}
+										<ManualTranslatedText>
+											{link.name}
+										</ManualTranslatedText>
 									</button>
 								</li>
 							))}
@@ -137,25 +153,39 @@ export function Footer() {
 						className="text-center md:text-left"
 					>
 						<h3 className="font-playfair font-semibold text-lg text-foreground mb-4">
-							Contact Info
+							<ManualTranslatedText>
+								Contact Info
+							</ManualTranslatedText>
 						</h3>
 						<div className="space-y-3">
 							<p className="text-muted-foreground">
-								<span className="font-medium">Phone:</span>
+								<span className="font-medium">
+									<ManualTranslatedText>
+										Phone:
+									</ManualTranslatedText>
+								</span>
 								<br />
 								+971 555238077
 							</p>
 							<p className="text-muted-foreground">
-								<span className="font-medium">Email:</span>
+								<span className="font-medium">
+									<ManualTranslatedText>
+										Email:
+									</ManualTranslatedText>
+								</span>
 								<br />
 								susuhtet24@gmail.com
 							</p>
 							<p className="text-muted-foreground">
 								<span className="font-medium">
-									Specialization:
+									<ManualTranslatedText>
+										Specialization:
+									</ManualTranslatedText>
 								</span>
 								<br />
-								Financial Services & Insurance
+								<ManualTranslatedText>
+									Financial Services & Insurance
+								</ManualTranslatedText>
 							</p>
 						</div>
 					</motion.div>
@@ -170,13 +200,23 @@ export function Footer() {
 					className="border-t border-border mt-8 pt-8 text-center"
 				>
 					<p className="text-muted-foreground text-sm mb-3 md:mb-3 text-center ">
-						© 2025 Su Htet. All rights reserved. MDRT Qualified
-						Advisor.
+						<ManualTranslatedText>
+							© 2025 Su Htet. All rights reserved. MDRT Qualified
+							Advisor.
+						</ManualTranslatedText>
 					</p>
 					<div className="flex items-center justify-center space-x-2 text-muted-foreground">
-						<span>Made with</span>
+						<span>
+							<ManualTranslatedText>
+								Made with
+							</ManualTranslatedText>
+						</span>
 						<Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" />
-						<span>by John (Software Developer)</span>
+						<span>
+							<ManualTranslatedText>
+								by John (Software Developer)
+							</ManualTranslatedText>
+						</span>
 					</div>
 				</motion.div>
 			</div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ManualTranslatedText } from "@/components/manual-translated-text";
 import {
 	ArrowDown,
 	Mail,
@@ -71,7 +72,9 @@ export function HeroSection() {
 							transition={{ delay: 0.2, duration: 0.6 }}
 						>
 							<h1 className="font-playfair text-5xl lg:text-7xl font-bold text-foreground leading-tight">
-								Su Htet
+								<ManualTranslatedText>
+									Su Htet
+								</ManualTranslatedText>
 							</h1>
 							<div className="h-1 w-24 gradient-gold rounded-full mt-4" />
 						</motion.div>
@@ -82,7 +85,9 @@ export function HeroSection() {
 							transition={{ delay: 0.4, duration: 0.6 }}
 							className="text-2xl lg:text-3xl text-muted-foreground font-light"
 						>
-							Financial Services Consultant
+							<ManualTranslatedText>
+								Financial Services Consultant
+							</ManualTranslatedText>
 						</motion.h2>
 
 						<motion.p
@@ -91,10 +96,12 @@ export function HeroSection() {
 							transition={{ delay: 0.6, duration: 0.6 }}
 							className="text-lg text-muted-foreground leading-relaxed max-w-2xl"
 						>
-							MDRT Qualified Advisor & AIA Premier Club Member
-							with a proven track record of building strong client
-							relationships and providing tailored financial
-							protection solutions.
+							<ManualTranslatedText>
+								MDRT Qualified Advisor & AIA Premier Club Member
+								with a proven track record of building strong
+								client relationships and providing tailored
+								financial protection solutions.
+							</ManualTranslatedText>
 						</motion.p>
 
 						<motion.div
@@ -109,7 +116,9 @@ export function HeroSection() {
 								type="button"
 							>
 								<ArrowDown className="mr-2 h-4 w-4" />
-								Get Started
+								<ManualTranslatedText>
+									Get Started
+								</ManualTranslatedText>
 							</button>
 							<button
 								onClick={scrollToContact}
@@ -117,7 +126,9 @@ export function HeroSection() {
 								type="button"
 							>
 								<Mail className="mr-2 h-4 w-4" />
-								Get In Touch
+								<ManualTranslatedText>
+									Get In Touch
+								</ManualTranslatedText>
 							</button>
 						</motion.div>
 

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
+import { ManualTranslatedText } from "@/components/manual-translated-text";
 
 const education = [
 	{
@@ -46,12 +47,14 @@ export function EducationSection() {
 					className="text-center mb-16"
 				>
 					<h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-4">
-						Education
+						<ManualTranslatedText>Education</ManualTranslatedText>
 					</h2>
 					<div className="h-1 w-24 gradient-gold rounded-full mx-auto mb-8" />
 					<p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-						Continuous learning and professional development in
-						finance and business
+						<ManualTranslatedText>
+							Continuous learning and professional development in
+							finance and business
+						</ManualTranslatedText>
 					</p>
 				</motion.div>
 
@@ -88,7 +91,9 @@ export function EducationSection() {
 										<div className="flex items-center justify-between mb-3">
 											<div className="flex items-center gap-3">
 												<span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">
-													{edu.year}
+													<ManualTranslatedText>
+														{edu.year}
+													</ManualTranslatedText>
 												</span>
 												<span
 													className={`text-xs px-2 py-1 rounded-full font-medium ${
@@ -98,21 +103,29 @@ export function EducationSection() {
 															: "bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400"
 													}`}
 												>
-													{edu.status}
+													<ManualTranslatedText>
+														{edu.status}
+													</ManualTranslatedText>
 												</span>
 											</div>
 											<span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
-												{edu.type}
+												<ManualTranslatedText>
+													{edu.type}
+												</ManualTranslatedText>
 											</span>
 										</div>
 
 										<h3 className="font-playfair text-xl font-semibold text-foreground mb-2">
-											{edu.degree}
+											<ManualTranslatedText>
+												{edu.degree}
+											</ManualTranslatedText>
 										</h3>
 
 										<p className="text-muted-foreground flex items-center gap-2">
 											<GraduationCap className="h-4 w-4" />
-											{edu.institution}
+											<ManualTranslatedText>
+												{edu.institution}
+											</ManualTranslatedText>
 										</p>
 									</div>
 								</motion.div>
