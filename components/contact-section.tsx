@@ -5,7 +5,7 @@ import type React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MessageCircle, ExternalLink } from "lucide-react";
+import { Phone, Mail, MessageCircle, Linkedin } from "lucide-react";
 
 const contactInfo = [
 	{
@@ -21,7 +21,7 @@ const contactInfo = [
 		href: "mailto:susuhtet24@gmail.com",
 	},
 	{
-		icon: ExternalLink,
+		icon: Linkedin,
 		label: "LinkedIn",
 		value: "Su Su Htet",
 		href: "http://linkedin.com/in/su-su-htet-0837b0169",
