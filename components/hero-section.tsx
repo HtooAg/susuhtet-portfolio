@@ -182,7 +182,7 @@ export function HeroSection() {
 						transition={{ duration: 0.8, delay: 0.2 }}
 						className="relative"
 					>
-						<div className="relative w-80 h-80 lg:w-80 lg:h-100 mx-auto">
+						<div className="relative w-80 h-100 lg:w-80 lg:h-100 mx-auto">
 							<motion.div
 								animate={{ rotate: 360 }}
 								transition={{
