@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail, ExternalLink, MessageCircle, Heart } from "lucide-react";
+import { Phone, Mail, ExternalLink, MessageCircle, Heart, Linkedin } from "lucide-react";
 import Image from "next/image";
 
 const quickLinks = [
@@ -25,7 +25,7 @@ const socialLinks = [
 		label: "Email",
 	},
 	{
-		icon: ExternalLink,
+		icon: Linkedin,
 		href: "http://linkedin.com/in/su-su-htet-0837b0169",
 		label: "LinkedIn",
 	},
