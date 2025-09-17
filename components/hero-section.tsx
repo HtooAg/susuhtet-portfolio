@@ -225,7 +225,7 @@ export function HeroSection() {
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ delay: 1.2, duration: 0.6 }}
+				transition={{ delay: 1.1, duration: 0.2 }}
 				className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
 			>
 				<Button
@@ -234,9 +234,9 @@ export function HeroSection() {
 					className="p-2 rounded-full hover:bg-primary/10"
 				>
 					<motion.div
-						animate={{ y: [0, 10, 0] }}
+						animate={{ y: [0, 5, 0] }}
 						transition={{
-							duration: 2,
+							duration: 5,
 							repeat: Number.POSITIVE_INFINITY,
 						}}
 					>

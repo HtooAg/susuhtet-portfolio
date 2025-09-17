@@ -479,7 +479,7 @@ export const translations = {
 	},
 	"© 2025 Su Htet. All rights reserved. MDRT Qualified Advisor.": {
 		en: "© 2025 Su Htet. All rights reserved. MDRT Qualified Advisor.",
-		my: "© ၂၀၂၅ စုဟက်။ မူပိုင်ခွင့်အားလုံးရယူထားသည်။ MDRT အရည်အချင်းပြည့်မီသော အကြံပေး။",
+		my: "© ၂၀၂၅ စုထက်။ မူပိုင်ခွင့်အားလုံးရယူထားသည်။ MDRT အရည်အချင်းပြည့်မီသော အကြံပေး။",
 	},
 	"Made with": {
 		en: "Made with",

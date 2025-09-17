@@ -151,6 +151,7 @@ export function Navbar() {
 							whileHover={{ scale: 1.02 }}
 							transition={{ duration: 0.1 }}
 							className="flex items-center space-x-2 cursor-pointer"
+							onClick={() => scrollToSection("#home")}
 						>
 							<Image
 								src="/images/logo.jpg"
