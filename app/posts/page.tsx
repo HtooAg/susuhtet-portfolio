@@ -506,7 +506,7 @@ export default function PostsPage() {
 						>
 							<h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
 								<ManualTranslatedText>
-									Categories
+									Latest Posts
 								</ManualTranslatedText>
 							</h2>
 
