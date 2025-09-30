@@ -8,6 +8,7 @@ import { TranslationToggle } from "@/components/translation-toggle";
 import { ManualTranslatedText } from "@/components/manual-translated-text";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 
 const navItems = [
 	{ name: "Home", href: "#home" },
@@ -15,6 +16,7 @@ const navItems = [
 	{ name: "Experience", href: "#experience" },
 	{ name: "Education", href: "#education" },
 	{ name: "Skills", href: "#skills" },
+	{ name: "Activities", href: "#activities" },
 	{ name: "Posts", href: "#posts" },
 	{ name: "Contact", href: "#contact" },
 ];
@@ -25,6 +27,8 @@ export function Navbar() {
 	const [activeSection, setActiveSection] = useState("home");
 	const [scrollProgress, setScrollProgress] = useState(0);
 	const [mounted, setMounted] = useState(false);
+	const router = useRouter();
+	const pathname = usePathname();
 
 	useEffect(() => {
 		setMounted(true);
@@ -40,6 +44,17 @@ export function Navbar() {
 
 			setScrolled(window.scrollY > 50);
 			setScrollProgress(progress);
+
+			// Check if we're on specific pages
+			if (pathname === "/posts") {
+				setActiveSection("posts");
+				return;
+			}
+
+			if (pathname === "/activities") {
+				setActiveSection("activities");
+				return;
+			}
 
 			// Update active section based on scroll position
 			const sections = navItems.map((item) => item.href.substring(1));
@@ -117,6 +132,28 @@ export function Navbar() {
 	}
 
 	const scrollToSection = (href: string) => {
+		// Handle Posts navigation - redirect to posts page if not on home page
+		if (href === "#posts") {
+			if (pathname !== "/") {
+				router.push("/posts");
+				return;
+			}
+		}
+
+		// Handle Activities navigation - redirect to activities page if not on home page
+		if (href === "#activities") {
+			if (pathname !== "/") {
+				router.push("/activities");
+				return;
+			}
+		}
+
+		// Handle other navigation - redirect to home page if not on home page
+		if (href !== "#posts" && href !== "#activities" && pathname !== "/") {
+			router.push("/" + href);
+			return;
+		}
+
 		const element = document.querySelector(href);
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });
@@ -145,8 +182,8 @@ export function Navbar() {
 				}`}
 			>
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<div className="flex justify-between items-center h-16">
-						{/* Logo */}
+					<div className="flex items-center h-16 relative">
+						{/* Logo - Left */}
 						<motion.div
 							whileHover={{ scale: 1.02 }}
 							transition={{ duration: 0.1 }}
@@ -167,47 +204,54 @@ export function Navbar() {
 							</span>
 						</motion.div>
 
-						{/* Desktop Navigation */}
-						<div className="hidden md:flex items-center space-x-1">
-							{navItems.map((item) => (
-								<motion.button
-									key={item.name}
-									onClick={() => scrollToSection(item.href)}
-									className={`px-4 py-2 rounded-lg font-medium transition-all duration-100 relative cursor-pointer ${
-										activeSection === item.href.substring(1)
-											? "text-primary bg-primary/10"
-											: "text-foreground hover:text-primary hover:bg-primary/5"
-									}`}
-									whileHover={{ scale: 1.02 }}
-									whileTap={{ scale: 0.98 }}
-									transition={{ duration: 0.1 }}
-								>
-									<ManualTranslatedText>
-										{item.name}
-									</ManualTranslatedText>
-									{activeSection ===
-										item.href.substring(1) && (
-										<motion.div
-											layoutId="activeSection"
-											className="absolute inset-0 bg-primary/10 rounded-lg -z-10"
-											initial={false}
-											transition={{
-												type: "spring",
-												stiffness: 380,
-												damping: 30,
-											}}
-										/>
-									)}
-								</motion.button>
-							))}
-							<div className="ml-4 flex items-center space-x-2">
-								<TranslationToggle />
-								<ThemeToggle />
+						{/* Desktop Navigation - Centered */}
+						<div className="hidden md:flex items-center justify-center flex-1">
+							<div className="flex items-center space-x-1">
+								{navItems.map((item) => (
+									<motion.button
+										key={item.name}
+										onClick={() =>
+											scrollToSection(item.href)
+										}
+										className={`px-4 py-2 rounded-lg font-medium transition-all duration-100 relative cursor-pointer ${
+											activeSection ===
+											item.href.substring(1)
+												? "text-primary bg-primary/10"
+												: "text-foreground hover:text-primary hover:bg-primary/5"
+										}`}
+										whileHover={{ scale: 1.02 }}
+										whileTap={{ scale: 0.98 }}
+										transition={{ duration: 0.1 }}
+									>
+										<ManualTranslatedText>
+											{item.name}
+										</ManualTranslatedText>
+										{activeSection ===
+											item.href.substring(1) && (
+											<motion.div
+												layoutId="activeSection"
+												className="absolute inset-0 bg-primary/10 rounded-lg -z-10"
+												initial={false}
+												transition={{
+													type: "spring",
+													stiffness: 380,
+													damping: 30,
+												}}
+											/>
+										)}
+									</motion.button>
+								))}
 							</div>
 						</div>
 
+						{/* Theme & Language Toggles - Right */}
+						<div className="hidden md:flex items-center space-x-2">
+							<TranslationToggle />
+							<ThemeToggle />
+						</div>
+
 						{/* Mobile Menu Button */}
-						<div className="md:hidden flex items-center space-x-2">
+						<div className="md:hidden flex items-center space-x-2 ml-auto">
 							<TranslationToggle />
 							<ThemeToggle />
 							<Button

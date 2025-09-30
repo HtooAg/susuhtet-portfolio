@@ -26,6 +26,10 @@ export const translations = {
 		en: "Skills",
 		my: "ကျွမ်းကျင်မှု",
 	},
+	Activities: {
+		en: "Activities",
+		my: "လှုပ်ရှားမှုများ",
+	},
 	Posts: {
 		en: "Posts",
 		my: "ပို့စ်များ",
@@ -40,10 +44,10 @@ export const translations = {
 		en: "Financial Services Consultant",
 		my: "ငွေကြေးဝန်ဆောင်မှု အကြံပေးပုဂ္ဂိုလ်",
 	},
-	"MDRT Qualified Advisor & AIA Premier Club Member with a proven track record of building strong client relationships and providing tailored financial protection solutions.":
+	"Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance & Media Branding. Skilled in data analysis, cross-cultural communication, campaign management.":
 		{
-			en: "MDRT Qualified Advisor & AIA Premier Club Member with a proven track record of building strong client relationships and providing tailored financial protection solutions.",
-			my: "MDRT အရည်အချင်းပြည့်မီသော အကြံပေးနှင့် AIA Premier Club အဖွဲ့ဝင်တစ်ဦးဖြစ်ပြီး ခိုင်မာသော ဖောက်သည်ဆက်ဆံရေးတည်ဆောက်ခြင်းနှင့် သင့်လျော်သော ငွေကြေးကာကွယ်မှုဖြေရှင်းချက်များ ပေးအပ်ခြင်းတွင် သက်သေပြနိုင်သော မှတ်တမ်းရှိသူဖြစ်သည်။",
+			en: "Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance & Media Branding. Skilled in data analysis, cross-cultural communication, campaign management.",
+			my: "အာမခံ၊ ငွေကြေးနှင့် မီဒီယာ အမှတ်တံဆိပ်တည်ဆောက်မှုတွင် နိုင်ငံတကာ အတွေ့အကြုံ ၅ နှစ်ကျော်ရှိသော ငွေကြေးဝန်ဆောင်မှု အကြံပေးပုဂ္ဂိုလ် ပညာရှင်တစ်ဦးဖြစ်သည်။ ဒေတာခွဲခြမ်းစိတ်ဖြာမှု၊ ယဉ်ကျေးမှုကျော်လွန်သော ဆက်သွယ်မှု၊ လှုပ်ရှားမှုစီမံခန့်ခွဲမှုတွင် ကျွမ်းကျင်သူဖြစ်သည်။ ",
 		},
 	"Get Started": {
 		en: "Get Started",
@@ -59,10 +63,10 @@ export const translations = {
 		en: "About Me",
 		my: "ကျွန်ုပ်အကြောင်း",
 	},
-	"Results-driven financial advisor with a proven track record of building strong client relationships and consistently meeting sales targets. Skilled in assessing client needs and providing tailored financial protection solutions.":
+	"Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance and Media Branding.Skilled in data analysis, cross-cultural communication, campaign management. Achieved Million Dollar Round Table (MDRT) and managing 100+ clients across the world. Recognized as 32 months sale consistency advisor.Have an experience of running campaigns and social media branding and marketing sessions.":
 		{
-			en: "Results-driven financial advisor with a proven track record of building strong client relationships and consistently meeting sales targets. Skilled in assessing client needs and providing tailored financial protection solutions.",
-			my: "ရလဒ်ကို အဓိကထားသော ငွေကြေးအကြံပေးတစ်ဦးဖြစ်ပြီး ခိုင်မာသော ဖောက်သည်ဆက်ဆံရေးတည်ဆောက်ခြင်းနှင့် ရောင်းချမှုပန်းတိုင်များကို တသမတ်တည်း အောင်မြင်စေခြင်းတွင် သက်သေပြနိုင်သော မှတ်တမ်းရှိသူဖြစ်သည်။ ဖောက်သည်များ၏ လိုအပ်ချက်များကို အကဲဖြတ်ခြင်းနှင့် သင့်လျော်သော ငွေကြေးကာကွယ်မှုဖြေရှင်းချက်များ ပေးအပ်ခြင်းတွင် ကျွမ်းကျင်သူဖြစ်သည်။",
+			en: "Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance and Media Branding.Skilled in data analysis, cross-cultural communication, campaign management. Achieved Million Dollar Round Table (MDRT) and managing 100+ clients across the world. Recognized as 32 months sale consistency advisor. Have an experience of running campaigns and social media branding and marketing sessions.",
+			my: "အာမခံ၊ ငွေကြေးနှင့် မီဒီယာ အမှတ်တံဆိပ်တည်ဆောက်မှုတွင် နိုင်ငံတကာ အတွေ့အကြုံ ၅ နှစ်ကျော်ရှိသော ငွေကြေးဝန်ဆောင်မှု အကြံပေးပုဂ္ဂိုလ် ပညာရှင်တစ်ဦးဖြစ်သည်။ ဒေတာခွဲခြမ်းစိတ်ဖြာမှု၊ ယဉ်ကျေးမှုကျော်လွန်သော ဆက်သွယ်မှု၊ လှုပ်ရှားမှုစီမံခန့်ခွဲမှုတွင် ကျွမ်းကျင်သူဖြစ်သည်။ Million Dollar Round Table (MDRT) ကို အောင်မြင်စွာ ရရှိခဲ့ပြီး ကမ္ဘာတစ်ဝှမ်းရှိ ဖောက်သည် ၁၀၀ ကျော်ကို စီမံခန့်ခွဲနေသူဖြစ်သည်။ ၃၂ လ ရောင်းချမှု တသမတ်တည်းရှိမှု အကြံပေးအဖြစ် အသိအမှတ်ပြုခံရသူဖြစ်သည်။ လှုပ်ရှားမှုများ ဦးဆောင်ခြင်းနှင့် လူမှုကွန်ယက် အမှတ်တံဆိပ်တည်ဆောက်မှုနှင့် စျေးကွက်ရှာဖွေရေး အစည်းအဝေးများ ကျင်းပခြင်းတွင် အတွေ့အကြုံရှိသူဖြစ်သည်။",
 		},
 	"MDRT Qualified": {
 		en: "MDRT Qualified",
@@ -495,6 +499,27 @@ export const translations = {
 			my: "MDRT အရည်အချင်းပြည့်မီသော ငွေကြေးအကြံပေးနှင့် AIA Premier Club အဖွဲ့ဝင်တစ်ဦးဖြစ်ပြီး သင့်လျော်သော အာမခံနှင့် ရင်းနှီးမြုပ်နှံမှုဖြေရှင်းချက်များမှတစ်ဆင့် ဖောက်သည်များ၏ ငွေကြေးပန်းတိုင်များကို အောင်မြင်အောင် ကူညီရန် ရည်စူးထားသူဖြစ်သည်။",
 		},
 
+	// Professional description with proper formatting
+	"Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance and Media Branding.Skilled in data analysis, cross-cultural communication, campaign management. Achieved Million Dollar Round Table (MDRT) and managing 100+ clients across the world. Recognized as 32 months sale consistency advisor.Have an experience of running campaigns and social media branding and marketing sessions.":
+		{
+			en: "Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance and Media Branding.Skilled in data analysis, cross-cultural communication, campaign management. Achieved Million Dollar Round Table (MDRT) and managing 100+ clients across the world. Recognized as 32 months sale consistency advisor.Have an experience of running campaigns and social media branding and marketing sessions.",
+			my: "အာမခံ၊ ငွေကြေးနှင့် မီဒီယာ အမှတ်တံဆိပ်တည်ဆောက်မှုတွင် နိုင်ငံတကာ အတွေ့အကြုံ ၅ နှစ်ကျော်ရှိသော ငွေကြေးဝန်ဆောင်မှု အကြံပေးပုဂ္ဂိုလ် ပညာရှင်တစ်ဦးဖြစ်သည်။ ဒေတာခွဲခြမ်းစိတ်ဖြာမှု၊ ယဉ်ကျေးမှုကျော်လွန်သော ဆက်သွယ်မှု၊ လှုပ်ရှားမှုစီမံခန့်ခွဲမှုတွင် ကျွမ်းကျင်သူဖြစ်သည်။ Million Dollar Round Table (MDRT) ကို အောင်မြင်စွာ ရရှိခဲ့ပြီး ကမ္ဘာတစ်ဝှမ်းရှိ ဖောက်သည် ၁၀၀ ကျော်ကို စီမံခန့်ခွဲနေသူဖြစ်သည်။ ၃၂ လ ရောင်းချမှု တသမတ်တည်းရှိမှု အကြံပေးအဖြစ် အသိအမှတ်ပြုခံရသူဖြစ်သည်။ လှုပ်ရှားမှုများ ဦးဆောင်ခြင်းနှင့် လူမှုကွန်ယက် အမှတ်တံဆိပ်တည်ဆောက်မှုနှင့် စျေးကွက်ရှာဖွေရေး အစည်းအဝေးများ ကျင်းပခြင်းတွင် အတွေ့အကြုံရှိသူဖြစ်သည်။",
+		},
+
+	// Professional description with proper formatting (with "and")
+	"Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance and Media Branding. Skilled in data analysis, cross-cultural communication, campaign management. Achieved Million Dollar Round Table (MDRT) and managing 100+ clients across the world. Recognized as 32 months sale consistency advisor. Have an experience of running campaigns and social media branding and marketing sessions.":
+		{
+			en: "Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance and Media Branding. Skilled in data analysis, cross-cultural communication, campaign management. Achieved Million Dollar Round Table (MDRT) and managing 100+ clients across the world. Recognized as 32 months sale consistency advisor. Have an experience of running campaigns and social media branding and marketing sessions.",
+			my: "အာမခံ၊ ငွေကြေးနှင့် မီဒီယာ အမှတ်တံဆိပ်တည်ဆောက်မှုတွင် နိုင်ငံတကာ အတွေ့အကြုံ ၅ နှစ်ကျော်ရှိသော ငွေကြေးဝန်ဆောင်မှု အကြံပေးပုဂ္ဂိုလ် ပညာရှင်တစ်ဦးဖြစ်သည်။ ဒေတာခွဲခြမ်းစိတ်ဖြာမှု၊ ယဉ်ကျေးမှုကျော်လွန်သော ဆက်သွယ်မှု၊ လှုပ်ရှားမှုစီမံခန့်ခွဲမှုတွင် ကျွမ်းကျင်သူဖြစ်သည်။ Million Dollar Round Table (MDRT) ကို အောင်မြင်စွာ ရရှိခဲ့ပြီး ကမ္ဘာတစ်ဝှမ်းရှိ ဖောက်သည် ၁၀၀ ကျော်ကို စီမံခန့်ခွဲနေသူဖြစ်သည်။ ၃၂ လ ရောင်းချမှု တသမတ်တည်းရှိမှု အကြံပေးအဖြစ် အသိအမှတ်ပြုခံရသူဖြစ်သည်။ လှုပ်ရှားမှုများ ဦးဆောင်ခြင်းနှင့် လူမှုကွန်ယက် အမှတ်တံဆိပ်တည်ဆောက်မှုနှင့် စျေးကွက်ရှာဖွေရေး အစည်းအဝေးများ ကျင်းပခြင်းတွင် အတွေ့အကြုံရှိသူဖြစ်သည်။",
+		},
+
+	// Professional description - shorter version for hero section
+	"Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance & Media Branding. Skilled in data analysis, cross-cultural communication, campaign management.":
+		{
+			en: "Financial Services Consultant professional with 5+ years of international experience in Insurance, Finance & Media Branding. Skilled in data analysis, cross-cultural communication, campaign management.",
+			my: "အာမခံ၊ ငွေကြေးနှင့် မီဒီယာ အမှတ်တံဆိပ်တည်ဆောက်မှုတွင် နိုင်ငံတကာ အတွေ့အကြုံ ၅ နှစ်ကျော်ရှိသော ငွေကြေးဝန်ဆောင်မှု အကြံပေးပုဂ္ဂိုလ် ပညာရှင်တစ်ဦးဖြစ်သည်။ ဒေတာခွဲခြမ်းစိတ်ဖြာမှု၊ ယဉ်ကျေးမှုကျော်လွန်သော ဆက်သွယ်မှု၊ လှုပ်ရှားမှုစီမံခန့်ခွဲမှုတွင် ကျွမ်းကျင်သူဖြစ်သည်။",
+		},
+
 	// Contact labels
 	Phone: {
 		en: "Phone",
@@ -512,6 +537,212 @@ export const translations = {
 		en: "WhatsApp",
 		my: "ဝှတ်စ်အက်ပ်",
 	},
+	Facebook: {
+		en: "Facebook",
+		my: "ဖေ့စ်ဘွတ်",
+	},
+	TikTok: {
+		en: "TikTok",
+		my: "တစ်တော့",
+	},
+
+	// Activities Section
+	"Professional activities, achievements, and community involvement that showcase dedication to excellence in financial services and client relationships.":
+		{
+			en: "Professional activities, achievements, and community involvement that showcase dedication to excellence in financial services and client relationships.",
+			my: "ငွေကြေးဝန်ဆောင်မှုနှင့် ဖောက်သည်ဆက်ဆံရေးတွင် ထူးချွန်မှုအတွက် ရည်စူးမှုကို ပြသသော အသက်မွေးဝမ်းကြောင်းလှုပ်ရှားမှုများ၊ အောင်မြင်မှုများနှင့် လူမှုအသိုင်းအဝိုင်းပါဝင်မှုများ။",
+		},
+	"MDRT Achievement": {
+		en: "MDRT Achievement",
+		my: "MDRT အောင်မြင်မှု",
+	},
+	"Successfully qualified for Million Dollar Round Table 2025": {
+		en: "Successfully qualified for Million Dollar Round Table 2025",
+		my: "Million Dollar Round Table 2025 အတွက် အောင်မြင်စွာ အရည်အချင်းပြည့်မီခဲ့သည်",
+	},
+	"Professional Achievement": {
+		en: "Professional Achievement",
+		my: "အသက်မွေးဝမ်းကြောင်း အောင်မြင်မှု",
+	},
+	"Client Networking Events": {
+		en: "Client Networking Events",
+		my: "ဖောက်သည် ကွန်ယက်ချိတ်ဆက်မှု အစီအစဉ်များ",
+	},
+	"Organized quarterly client appreciation events and financial seminars": {
+		en: "Organized quarterly client appreciation events and financial seminars",
+		my: "သုံးလတစ်ကြိမ် ဖောက်သည်ကျေးဇူးတင်ပွဲများနှင့် ငွေကြေးဆိုင်ရာ ဆွေးနွေးပွဲများကို စီစဉ်ခဲ့သည်",
+	},
+	"Client Relations": {
+		en: "Client Relations",
+		my: "ဖောက်သည်ဆက်ဆံရေး",
+	},
+	"Sales Leadership": {
+		en: "Sales Leadership",
+		my: "ရောင်းချရေး ခေါင်းဆောင်မှု",
+	},
+	"Led team training sessions on financial product knowledge and sales techniques":
+		{
+			en: "Led team training sessions on financial product knowledge and sales techniques",
+			my: "ငွေကြေးထုတ်ကုန်အသိပညာနှင့် ရောင်းချရေးနည်းပညာများအတွက် အဖွဲ့လေ့ကျင့်မှုများကို ဦးဆောင်ခဲ့သည်",
+		},
+	Leadership: {
+		en: "Leadership",
+		my: "ခေါင်းဆောင်မှု",
+	},
+	"International Conferences": {
+		en: "International Conferences",
+		my: "နိုင်ငံတကာ ညီလာခံများ",
+	},
+	"Attended global insurance and financial services conferences": {
+		en: "Attended global insurance and financial services conferences",
+		my: "ကမ္ဘာ့အာမခံနှင့် ငွေကြေးဝန်ဆောင်မှု ညီလာခံများတွင် တက်ရောက်ခဲ့သည်",
+	},
+	"Professional Development": {
+		en: "Professional Development",
+		my: "အသက်မွေးဝမ်းကြောင်း ဖွံ့ဖြိုးတိုးတက်မှု",
+	},
+	"Campaign Management": {
+		en: "Campaign Management",
+		my: "လှုပ်ရှားမှု စီမံခန့်ခွဲမှု",
+	},
+	"Successfully managed social media branding and marketing campaigns": {
+		en: "Successfully managed social media branding and marketing campaigns",
+		my: "လူမှုကွန်ယက် အမှတ်တံဆိပ်တည်ဆောက်မှုနှင့် စျေးကွက်ရှာဖွေရေး လှုပ်ရှားမှုများကို အောင်မြင်စွာ စီမံခန့်ခွဲခဲ့သည်",
+	},
+	Marketing: {
+		en: "Marketing",
+		my: "စျေးကွက်ရှာဖွေရေး",
+	},
+	"Community Outreach": {
+		en: "Community Outreach",
+		my: "လူမှုအသိုင်းအဝိုင်း လက်လှမ်းမီမှု",
+	},
+	"Participated in financial literacy workshops for local communities": {
+		en: "Participated in financial literacy workshops for local communities",
+		my: "ဒေသခံလူမှုအသိုင်းအဝိုင်းများအတွက် ငွေကြေးပညာရေး အလုပ်ရုံများတွင် ပါဝင်ခဲ့သည်",
+	},
+	"Community Service": {
+		en: "Community Service",
+		my: "လူမှုအသိုင်းအဝိုင်း ဝန်ဆောင်မှု",
+	},
+	Ongoing: {
+		en: "Ongoing",
+		my: "ဆက်လက်လုပ်ဆောင်နေသည်",
+	},
+	"2024": {
+		en: "2024",
+		my: "၂၀၂၄",
+	},
+	"2023-2024": {
+		en: "2023-2024",
+		my: "၂၀၂၃-၂၀၂၄",
+	},
+	"2022-2024": {
+		en: "2022-2024",
+		my: "၂၀၂၂-၂၀၂၄",
+	},
+	"2021-2024": {
+		en: "2021-2024",
+		my: "၂၀၂၁-၂၀၂၄",
+	},
+
+	// New translations for updated content
+	"Read More": {
+		en: "Read More",
+		my: "ပိုမိုဖတ်ရှုရန်",
+	},
+	"Read Less": {
+		en: "Read Less",
+		my: "လျှော့ဖတ်ရန်",
+	},
+	"View Activities": {
+		en: "View Activities",
+		my: "လှုပ်ရှားမှုများကြည့်ရှုရန်",
+	},
+	"View All Activities": {
+		en: "View All Activities",
+		my: "လှုပ်ရှားမှုများအားလုံးကြည့်ရှုရန်",
+	},
+	"See More Posts": {
+		en: "See More Posts",
+		my: "ပို့စ်များပိုမိုကြည့်ရှုရန်",
+	},
+	"View Posts": {
+		en: "View Posts",
+		my: "ပို့စ်များကြည့်ရှုရန်",
+	},
+	"Marketing & Events": {
+		en: "Marketing & Events",
+		my: "စျေးကွက်ရှာဖွေရေးနှင့် အစီအစဉ်များ",
+	},
+	"Business Development": {
+		en: "Business Development",
+		my: "စီးပွားရေးဖွံ့ဖြိုးတိုးတက်မှု",
+	},
+	"I organized and managed social and event activities designed to strengthen brand awareness and community engagement. By combining both online campaigns and in-person events, I created opportunities for direct interaction with the target audience.":
+		{
+			en: "I organized and managed social and event activities designed to strengthen brand awareness and community engagement. By combining both online campaigns and in-person events, I created opportunities for direct interaction with the target audience.",
+			my: "အမှတ်တံဆိပ်အသိအမှတ်ပြုမှုနှင့် လူမှုအသိုင်းအဝိုင်းပါဝင်မှုကို အားကောင်းစေရန် ဒီဇိုင်းထုတ်ထားသော လူမှုရေးနှင့် အစီအစဉ်လှုပ်ရှားမှုများကို ကျွန်ုပ်စီစဉ်ခန့်ခွဲခဲ့သည်။ အွန်လိုင်းလှုပ်ရှားမှုများနှင့် တိုက်ရိုက်အစီအစဉ်များကို ပေါင်းစပ်ခြင်းဖြင့် ပစ်မှတ်ပရိသတ်နှင့် တိုက်ရိုက်ဆက်သွယ်နိုင်သော အခွင့်အလမ်းများကို ဖန်တီးခဲ့သည်။",
+		},
+	"I organized and actively participated in a corporate fair to showcase our services and connect with potential clients. I prepared engaging materials, interacted with attendees, and highlighted the value our brand could bring to their business needs.":
+		{
+			en: "I organized and actively participated in a corporate fair to showcase our services and connect with potential clients. I prepared engaging materials, interacted with attendees, and highlighted the value our brand could bring to their business needs.",
+			my: "ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှုများကို ပြသရန်နှင့် အလားအလာရှိသော ဖောက်သည်များနှင့် ဆက်သွယ်ရန် ကော်ပိုရေးရှင်းပြပွဲတစ်ခုကို ကျွန်ုပ်စီစဉ်ပြီး တက်ကြွစွာပါဝင်ခဲ့သည်။ စိတ်ဝင်စားဖွယ်ရာ အရာများကို ပြင်ဆင်ခဲ့ပြီး တက်ရောက်သူများနှင့် ဆက်သွယ်ကာ ကျွန်ုပ်တို့၏ အမှတ်တံဆိပ်သည် သူတို့၏ စီးပွားရေးလိုအပ်ချက်များအတွက် ယူဆောင်လာနိုင်သော တန်ဖိုးကို မီးမောင်းထိုးပြခဲ့သည်။",
+		},
+	// Additional translations for activities page
+	"All Activities": {
+		en: "All Activities",
+		my: "လှုပ်ရှားမှုများအားလုံး",
+	},
+	"Professional Excellence & Community Impact": {
+		en: "Professional Excellence & Community Impact",
+		my: "အသက်မွေးဝမ်းကြောင်း ထူးချွန်မှုနှင့် လူမှုအသိုင်းအဝိုင်း သက်ရောက်မှု",
+	},
+	"Discover my professional activities, achievements, and community involvement that showcase dedication to excellence in financial services, marketing, and client relationships.":
+		{
+			en: "Discover my professional activities, achievements, and community involvement that showcase dedication to excellence in financial services, marketing, and client relationships.",
+			my: "ငွေကြေးဝန်ဆောင်မှု၊ စျေးကွက်ရှာဖွေရေးနှင့် ဖောက်သည်ဆက်ဆံရေးတွင် ထူးချွန်မှုအတွက် ရည်စူးမှုကို ပြသသော ကျွန်ုပ်၏ အသက်မွေးဝမ်းကြောင်းလှုပ်ရှားမှုများ၊ အောင်မြင်မှုများနှင့် လူမှုအသိုင်းအဝိုင်းပါဝင်မှုများကို ရှာဖွေတွေ့ရှိပါ။",
+		},
+	"Explore Activities": {
+		en: "Explore Activities",
+		my: "လှုပ်ရှားမှုများကို လေ့လာရန်",
+	},
+	"Explore my comprehensive collection of professional activities covering marketing campaigns, business development, educational initiatives, and leadership training. Filter by category to find specific areas of expertise.":
+		{
+			en: "Explore my comprehensive collection of professional activities covering marketing campaigns, business development, educational initiatives, and leadership training. Filter by category to find specific areas of expertise.",
+			my: "စျေးကွက်ရှာဖွေရေးလှုပ်ရှားမှုများ၊ စီးပွားရေးဖွံ့ဖြိုးတိုးတက်မှု၊ ပညာရေးအစပျိုးမှုများနှင့် ခေါင်းဆောင်မှုလေ့ကျင့်ရေးများကို လွှမ်းခြုံသော ကျွန်ုပ်၏ ပြည့်စုံသော အသက်မွေးဝမ်းကြောင်းလှုပ်ရှားမှုများကို လေ့လာပါ။ အထူးကျွမ်းကျင်မှုနယ်ပယ်များကို ရှာဖွေရန် အမျိုးအစားအလိုက် စစ်ထုတ်ပါ။",
+		},
+	"No activities found for the selected category. Try selecting a different category.":
+		{
+			en: "No activities found for the selected category. Try selecting a different category.",
+			my: "ရွေးချယ်ထားသော အမျိုးအစားအတွက် လှုပ်ရှားမှုများ မတွေ့ရှိပါ။ အခြားအမျိုးအစားကို ရွေးချယ်ကြည့်ပါ။",
+		},
+	"Education & Training": {
+		en: "Education & Training",
+		my: "ပညာရေးနှင့် လေ့ကျင့်ရေး",
+	},
+	"Leadership & Training": {
+		en: "Leadership & Training",
+		my: "ခေါင်းဆောင်မှုနှင့် လေ့ကျင့်ရေး",
+	},
+	"Insurance Awareness Knowledge Sharing": {
+		en: "Insurance Awareness Knowledge Sharing",
+		my: "အာမခံအသိပညာ ဗဟုသုတမျှဝေခြင်း",
+	},
+	"Marketing & Branding Strategy Sessions": {
+		en: "Marketing & Branding Strategy Sessions",
+		my: "စျေးကွက်ရှာဖွေရေးနှင့် အမှတ်တံဆိပ်ဗျူဟာ အစည်းအဝေးများ",
+	},
+	"I successfully led a knowledge-sharing session on insurance awareness, combining marketing expertise with industry insights.":
+		{
+			en: "I successfully led a knowledge-sharing session on insurance awareness, combining marketing expertise with industry insights.",
+			my: "ကျွန်ုပ်သည် စျေးကွက်ရှာဖွေရေးကျွမ်းကျင်မှုနှင့် လုပ်ငန်းခွင်ထိုးထွင်းသိမြင်မှုများကို ပေါင်းစပ်ကာ အာမခံအသိပညာဆိုင်ရာ ဗဟုသုတမျှဝေခြင်းအစည်းအဝေးကို အောင်မြင်စွာ ဦးဆောင်ခဲ့သည်။",
+		},
+	"I led marketing and branding strategy sharing sessions with my team to help them connect better with clients and drive real sales.":
+		{
+			en: "I led marketing and branding strategy sharing sessions with my team to help them connect better with clients and drive real sales.",
+			my: "ကျွန်ုပ်သည် ကျွန်ုပ်၏အဖွဲ့နှင့်အတူ စျေးကွက်ရှာဖွေရေးနှင့် အမှတ်တံဆိပ်ဗျူဟာမျှဝေခြင်းအစည်းအဝေးများကို ဦးဆောင်ကာ သူတို့အား ဖောက်သည်များနှင့် ပိုမိုကောင်းမွန်စွာ ဆက်သွယ်နိုင်စေရန်နှင့် အမှန်တကယ် ရောင်းချမှုများကို တွန်းအားပေးနိုင်စေရန် ကူညီခဲ့သည်။",
+		},
 };
 
 export function getTranslation(key: string, language: "en" | "my"): string {

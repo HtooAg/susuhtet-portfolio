@@ -3,15 +3,22 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ManualTranslatedText } from "@/components/manual-translated-text";
-import {
-	ArrowDown,
-	Mail,
-	MessageCircle,
-	Phone,
-	ExternalLink,
-	Linkedin,
-} from "lucide-react";
+import { ArrowDown, Mail, MessageCircle, Phone, Linkedin } from "lucide-react";
 import Image from "next/image";
+
+// Facebook Icon Component
+const FacebookIcon = ({ className }: { className?: string }) => (
+	<svg className={className} viewBox="0 0 24 24" fill="currentColor">
+		<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+	</svg>
+);
+
+// TikTok Icon Component
+const TikTokIcon = ({ className }: { className?: string }) => (
+	<svg className={className} viewBox="0 0 24 24" fill="currentColor">
+		<path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+	</svg>
+);
 
 export function HeroSection() {
 	const scrollToAbout = () => {
@@ -47,6 +54,22 @@ export function HeroSection() {
 	const handleEmail = () => {
 		console.log("Email clicked");
 		window.open("mailto:susuhtet24@gmail.com", "_blank");
+	};
+
+	const handleFacebook = () => {
+		console.log("Facebook clicked");
+		window.open(
+			"https://www.facebook.com/profile.php?id=61553978257502",
+			"_blank"
+		);
+	};
+
+	const handleTikTok = () => {
+		console.log("TikTok clicked");
+		window.open(
+			"https://www.tiktok.com/@s.shtet?_t=ZS-908zKMda5Wn&_r=1",
+			"_blank"
+		);
 	};
 
 	return (
@@ -97,13 +120,93 @@ export function HeroSection() {
 							className="text-lg text-muted-foreground leading-relaxed max-w-2xl"
 						>
 							<ManualTranslatedText>
-								MDRT Qualified Advisor & AIA Premier Club Member
-								with a proven track record of building strong
-								client relationships and providing tailored
-								financial protection solutions.
+								Financial Services Consultant professional with
+								5+ years of international experience in
+								Insurance, Finance & Media Branding. Skilled in
+								data analysis, cross-cultural communication,
+								campaign management.
 							</ManualTranslatedText>
 						</motion.p>
+						{/* Contact & Social Media Buttons */}
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 1.0, duration: 0.6 }}
+							className="flex gap-3 z-10 relative flex-wrap items-center"
+						>
+							{/* Primary Contact Buttons - Gold */}
+							<motion.button
+								type="button"
+								onClick={handlePhone}
+								whileHover={{ scale: 1.02, y: -1 }}
+								whileTap={{ scale: 0.98 }}
+								transition={{ duration: 0.2 }}
+								className="w-10 h-10 rounded-lg bg-gradient-to-r from-[#b8842a] to-[#c59952] hover:from-[#c59952] hover:to-[#d4af37] flex items-center justify-center text-white transition-all duration-200 shadow-lg cursor-pointer z-10 relative pointer-events-auto"
+								title="Phone"
+							>
+								<Phone className="h-4 w-4 pointer-events-none" />
+							</motion.button>
+							<motion.button
+								type="button"
+								onClick={handleEmail}
+								whileHover={{ scale: 1.02, y: -1 }}
+								whileTap={{ scale: 0.98 }}
+								transition={{ duration: 0.2 }}
+								className="w-10 h-10 rounded-lg bg-gradient-to-r from-[#b8842a] to-[#c59952] hover:from-[#c59952] hover:to-[#d4af37] flex items-center justify-center text-white transition-all duration-200 shadow-lg cursor-pointer z-10 relative pointer-events-auto"
+								title="Email"
+							>
+								<Mail className="h-4 w-4 pointer-events-none" />
+							</motion.button>
+							<motion.button
+								type="button"
+								onClick={handleGetStarted}
+								whileHover={{ scale: 1.02, y: -1 }}
+								whileTap={{ scale: 0.98 }}
+								transition={{ duration: 0.2 }}
+								className="w-10 h-10 rounded-lg bg-gradient-to-r from-[#b8842a] to-[#c59952] hover:from-[#c59952] hover:to-[#d4af37] flex items-center justify-center text-white transition-all duration-200 shadow-lg cursor-pointer z-10 relative pointer-events-auto"
+								title="WhatsApp"
+							>
+								<MessageCircle className="h-4 w-4 pointer-events-none" />
+							</motion.button>
 
+							{/* Divider */}
+							<div className="w-px h-8 bg-muted-foreground/20 mx-2" />
+
+							{/* Social Media Buttons - Gold Border & Icons */}
+							<motion.button
+								type="button"
+								onClick={handleLinkedIn}
+								whileHover={{ scale: 1.02, y: -1 }}
+								whileTap={{ scale: 0.98 }}
+								transition={{ duration: 0.2 }}
+								className="w-10 h-10 rounded-full border-2 border-[#b8842a] hover:border-[#c59952] flex items-center justify-center text-[#b8842a] hover:text-[#c59952] transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer z-10 relative pointer-events-auto bg-transparent"
+								title="LinkedIn"
+							>
+								<Linkedin className="h-4 w-4 pointer-events-none" />
+							</motion.button>
+							<motion.button
+								type="button"
+								onClick={handleFacebook}
+								whileHover={{ scale: 1.02, y: -1 }}
+								whileTap={{ scale: 0.98 }}
+								transition={{ duration: 0.2 }}
+								className="w-10 h-10 rounded-full border-2 border-[#b8842a] hover:border-[#c59952] flex items-center justify-center text-[#b8842a] hover:text-[#c59952] transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer z-10 relative pointer-events-auto bg-transparent"
+								title="Facebook"
+							>
+								<FacebookIcon className="h-4 w-4 pointer-events-none" />
+							</motion.button>
+							<motion.button
+								type="button"
+								onClick={handleTikTok}
+								whileHover={{ scale: 1.02, y: -1 }}
+								whileTap={{ scale: 0.98 }}
+								transition={{ duration: 0.2 }}
+								className="w-10 h-10 rounded-full border-2 border-[#b8842a] hover:border-[#c59952] flex items-center justify-center text-[#b8842a] hover:text-[#c59952] transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer z-10 relative pointer-events-auto bg-transparent"
+								title="TikTok"
+							>
+								<TikTokIcon className="h-4 w-4 pointer-events-none" />
+							</motion.button>
+						</motion.div>
 						<motion.div
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
@@ -131,59 +234,6 @@ export function HeroSection() {
 								</ManualTranslatedText>
 							</button>
 						</motion.div>
-
-						{/* Social Media Buttons */}
-						{/* <motion.div
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ delay: 1.0, duration: 0.6 }}
-							className="flex gap-3 z-10 relative"
-						>
-							<motion.button
-								type="button"
-								onClick={handlePhone}
-								whileHover={{ scale: 1.05, y: -2 }}
-								whileTap={{ scale: 0.95 }}
-								transition={{ duration: 0.2 }}
-								className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b8842a] to-[#c59952] hover:from-[#c59952] hover:to-[#d4af37] flex items-center justify-center text-white transition-all duration-200 shadow-lg cursor-pointer z-10 relative pointer-events-auto"
-								title="Phone"
-							>
-								<Phone className="h-5 w-5 pointer-events-none" />
-							</motion.button>
-							<motion.button
-								type="button"
-								onClick={handleEmail}
-								whileHover={{ scale: 1.05, y: -2 }}
-								whileTap={{ scale: 0.95 }}
-								transition={{ duration: 0.2 }}
-								className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b8842a] to-[#c59952] hover:from-[#c59952] hover:to-[#d4af37] flex items-center justify-center text-white transition-all duration-200 shadow-lg cursor-pointer z-10 relative pointer-events-auto"
-								title="Email"
-							>
-								<Mail className="h-5 w-5 pointer-events-none" />
-							</motion.button>
-							<motion.button
-								type="button"
-								onClick={handleLinkedIn}
-								whileHover={{ scale: 1.05, y: -2 }}
-								whileTap={{ scale: 0.95 }}
-								transition={{ duration: 0.2 }}
-								className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b8842a] to-[#c59952] hover:from-[#c59952] hover:to-[#d4af37] flex items-center justify-center text-white transition-all duration-200 shadow-lg cursor-pointer z-10 relative pointer-events-auto"
-								title="LinkedIn"
-							>
-								<Linkedin className="h-5 w-5 pointer-events-none" />
-							</motion.button>
-							<motion.button
-								type="button"
-								onClick={handleGetStarted}
-								whileHover={{ scale: 1.05, y: -2 }}
-								whileTap={{ scale: 0.95 }}
-								transition={{ duration: 0.2 }}
-								className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b8842a] to-[#c59952] hover:from-[#c59952] hover:to-[#d4af37] flex items-center justify-center text-white transition-all duration-200 shadow-lg cursor-pointer z-10 relative pointer-events-auto"
-								title="WhatsApp"
-							>
-								<MessageCircle className="h-5 w-5 pointer-events-none" />
-							</motion.button>
-						</motion.div> */}
 					</motion.div>
 
 					{/* Profile Image */}
@@ -194,28 +244,102 @@ export function HeroSection() {
 						className="relative"
 					>
 						<div className="relative w-80 h-100 lg:w-80 lg:h-100 mx-auto">
+							{/* Outer rotating ring */}
 							<motion.div
 								animate={{ rotate: 360 }}
 								transition={{
-									duration: 20,
+									duration: 25,
 									repeat: Number.POSITIVE_INFINITY,
 									ease: "linear",
 								}}
 								className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-accent opacity-20"
 							/>
+
+							{/* Middle pulsing ring */}
 							<motion.div
+								animate={{
+									scale: [1, 1.1, 1],
+									opacity: [0.3, 0.6, 0.3],
+								}}
+								transition={{
+									duration: 4,
+									repeat: Number.POSITIVE_INFINITY,
+									ease: "easeInOut",
+								}}
+								className="absolute inset-2 rounded-full bg-gradient-to-r from-[#b8842a] to-[#c59952] opacity-30"
+							/>
+
+							{/* Inner floating animation */}
+							<motion.div
+								animate={{
+									y: [0, -10, 0],
+									rotate: [0, 5, -5, 0],
+								}}
+								transition={{
+									duration: 6,
+									repeat: Number.POSITIVE_INFINITY,
+									ease: "easeInOut",
+								}}
 								whileHover={{ scale: 1.05 }}
-								transition={{ duration: 0.3 }}
 								className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary shadow-2xl"
 							>
-								<Image
-									src="/images/susuhtet.jpeg"
-									alt="Su Htet"
-									fill
-									className="object-cover object-top scale-110"
-									priority
+								{/* Shimmer effect */}
+								<motion.div
+									animate={{
+										x: ["-100%", "100%"],
+									}}
+									transition={{
+										duration: 3,
+										repeat: Number.POSITIVE_INFINITY,
+										ease: "linear",
+									}}
+									className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12"
 								/>
+
+								{/* Main image with subtle animations */}
+								<motion.div
+									animate={{
+										scale: [1.1, 1.15, 1.1],
+									}}
+									transition={{
+										duration: 8,
+										repeat: Number.POSITIVE_INFINITY,
+										ease: "easeInOut",
+									}}
+									className="w-full h-full"
+								>
+									<Image
+										src="/images/susuhtet.jpeg"
+										alt="Su Htet"
+										fill
+										className="object-cover object-top"
+										priority
+									/>
+								</motion.div>
 							</motion.div>
+
+							{/* Floating particles */}
+							{[...Array(6)].map((_, i) => (
+								<motion.div
+									key={i}
+									animate={{
+										y: [0, -20, 0],
+										x: [0, Math.sin(i) * 10, 0],
+										opacity: [0, 1, 0],
+									}}
+									transition={{
+										duration: 3 + i * 0.5,
+										repeat: Number.POSITIVE_INFINITY,
+										delay: i * 0.5,
+										ease: "easeInOut",
+									}}
+									className="absolute w-2 h-2 bg-gradient-to-r from-[#b8842a] to-[#c59952] rounded-full"
+									style={{
+										top: `${20 + i * 10}%`,
+										left: `${10 + i * 15}%`,
+									}}
+								/>
+							))}
 						</div>
 					</motion.div>
 				</div>
