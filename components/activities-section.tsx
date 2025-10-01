@@ -109,7 +109,7 @@ export function ActivitiesSection() {
 
 									{/* Date Badge */}
 									<div className="absolute top-4 right-4">
-										<span className="text-xs font-medium text-white bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full">
+										<span className="text-xs font-medium text-white gradient-gold hover:gradient-gold-hover hover:text-white backdrop-blur-sm px-3 py-1 rounded-full">
 											<ManualTranslatedText>
 												{activity.date}
 											</ManualTranslatedText>

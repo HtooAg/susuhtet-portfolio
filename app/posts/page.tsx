@@ -696,7 +696,7 @@ export default function PostsPage() {
 																	post
 																)
 															}
-															className="absolute top-4 right-4 gradient-gold text-white hover:gradient-gold-hover transition-all duration-300 p-3 h-auto shadow-lg hover:shadow-xl"
+															className="gradient-gold hover:gradient-gold-hover hover:text-white cursor-pointer absolute bottom-4 right-4 gradient-gold text-white hover:gradient-gold-hover transition-all duration-300 p-3 h-auto shadow-lg hover:shadow-xl"
 														>
 															<Share2 className="h-5 w-5" />
 														</Button>

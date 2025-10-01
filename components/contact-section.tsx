@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageCircle, Linkedin, Heart } from "lucide-react";
 import Image from "next/image";
 import { ManualTranslatedText } from "@/components/manual-translated-text";
+import { useRouter, usePathname } from "next/navigation";
 
 // Facebook Icon Component
 const FacebookIcon = ({ className }: { className?: string }) => (
@@ -106,6 +107,9 @@ const socialLinks = [
 ];
 
 export function ContactSection() {
+	const router = useRouter();
+	const pathname = usePathname();
+
 	const handleWhatsAppContact = () => {
 		const message = encodeURIComponent(
 			"Hello Su Htet, I'm interested in learning more about your financial services."
@@ -116,18 +120,37 @@ export function ContactSection() {
 	const scrollToSection = (href: string) => {
 		// Handle Posts navigation - redirect to posts page if not on home page
 		if (href === "#posts") {
-			if (window.location.pathname !== "/") {
-				window.location.href = "/posts";
+			if (pathname !== "/") {
+				router.push("/posts");
 				return;
 			}
 		}
 
-		// Handle other navigation - redirect to home page if not on home page
-		if (href !== "#posts" && window.location.pathname !== "/") {
-			window.location.href = "/" + href;
+		// Handle Activities navigation - redirect to activities page if not on home page
+		if (href === "#activities") {
+			if (pathname !== "/") {
+				router.push("/activities");
+				return;
+			}
+		}
+
+		// Handle other navigation - redirect to home page and scroll to section
+		if (href !== "#posts" && href !== "#activities" && pathname !== "/") {
+			// Navigate to home page first
+			router.push("/");
+
+			// Wait for navigation to complete, then scroll to section
+			setTimeout(() => {
+				const element = document.querySelector(href);
+				if (element) {
+					element.scrollIntoView({ behavior: "smooth" });
+				}
+			}, 100);
+
 			return;
 		}
 
+		// If already on home page, just scroll to section
 		const element = document.querySelector(href);
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });

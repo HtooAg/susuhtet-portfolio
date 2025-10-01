@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.suhtet.info/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/susuhtet.jpeg</image:loc>
+      <image:title>Su Htet - MDRT Financial Advisor</image:title>
+      <image:caption>Financial Services Consultant professional with 5+ years of international experience</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://www.suhtet.info/#about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Experience Section -->
+  <url>
+    <loc>https://www.suhtet.info/#experience</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Skills Section -->
+  <url>
+    <loc>https://www.suhtet.info/#skills</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Education Section -->
+  <url>
+    <loc>https://www.suhtet.info/#education</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.suhtet.info/#contact</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Posts Page -->
+  <url>
+    <loc>https://www.suhtet.info/posts</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/PostAIA.jpg</image:loc>
+      <image:title>Su Htet Professional Posts</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/postAIA1.jpg</image:loc>
+      <image:title>AIA Insurance Professional Content</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/postAIA2.jpg</image:loc>
+      <image:title>Financial Advisory Content</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/postAIA3.jpg</image:loc>
+      <image:title>MDRT Professional Achievement</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/postAIA4.jpg</image:loc>
+      <image:title>Insurance Industry Insights</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/postAIA5.jpg</image:loc>
+      <image:title>Financial Planning Expertise</image:title>
+    </image:image>
+  </url>
+
+  <!-- Activities Page -->
+  <url>
+    <loc>https://www.suhtet.info/activities</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/act1.png</image:loc>
+      <image:title>Su Htet Professional Activities</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/act2.png</image:loc>
+      <image:title>Financial Industry Events</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/act3.png</image:loc>
+      <image:title>MDRT Activities and Achievements</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/act4.png</image:loc>
+      <image:title>Professional Development Activities</image:title>
+    </image:image>
+  </url>
+
+  <!-- Myanmar Language Version -->
+  <url>
+    <loc>https://www.suhtet.info/my</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

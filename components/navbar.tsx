@@ -148,12 +148,24 @@ export function Navbar() {
 			}
 		}
 
-		// Handle other navigation - redirect to home page if not on home page
+		// Handle other navigation - redirect to home page and scroll to section
 		if (href !== "#posts" && href !== "#activities" && pathname !== "/") {
-			router.push("/" + href);
+			// Navigate to home page first
+			router.push("/");
+
+			// Wait for navigation to complete, then scroll to section
+			setTimeout(() => {
+				const element = document.querySelector(href);
+				if (element) {
+					element.scrollIntoView({ behavior: "smooth" });
+				}
+			}, 100);
+
+			setIsOpen(false);
 			return;
 		}
 
+		// If already on home page, just scroll to section
 		const element = document.querySelector(href);
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });
@@ -246,13 +258,13 @@ export function Navbar() {
 
 						{/* Theme & Language Toggles - Right */}
 						<div className="hidden md:flex items-center space-x-2">
-							<TranslationToggle />
+							{/* <TranslationToggle /> */}
 							<ThemeToggle />
 						</div>
 
 						{/* Mobile Menu Button */}
 						<div className="md:hidden flex items-center space-x-2 ml-auto">
-							<TranslationToggle />
+							{/* <TranslationToggle /> */}
 							<ThemeToggle />
 							<Button
 								variant="ghost"
