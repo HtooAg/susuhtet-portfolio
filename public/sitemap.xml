@@ -13,6 +13,13 @@
       <image:loc>https://www.suhtet.info/images/susuhtet.jpeg</image:loc>
       <image:title>Su Htet - MDRT Financial Advisor</image:title>
       <image:caption>Financial Services Consultant professional with 5+ years of international experience</image:caption>
+      <image:license>https://www.suhtet.info/copyright-notice.txt</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.suhtet.info/images/logo.jpg</image:loc>
+      <image:title>Su Htet Professional Logo</image:title>
+      <image:caption>Official logo and branding for Su Htet Financial Services</image:caption>
+      <image:license>https://www.suhtet.info/copyright-notice.txt</image:license>
     </image:image>
   </url>
 

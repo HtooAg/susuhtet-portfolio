@@ -6,6 +6,8 @@ import {
 } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TranslationProvider } from "@/contexts/translation-context";
+import { StructuredData } from "@/components/structured-data";
+import { ImageMetadata } from "@/components/image-metadata";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -87,6 +89,14 @@ export const metadata: Metadata = {
 	},
 	category: "Finance",
 	classification: "Financial Services",
+	other: {
+		copyright: "© 2024 Su Htet. All rights reserved.",
+		author: "Su Htet",
+		owner: "Su Htet",
+		"image-license": "Personal/Professional Use - Owned by Su Htet",
+		"content-license":
+			"All content owned by Su Htet - susuhtet24@gmail.com",
+	},
 };
 
 export default function RootLayout({
@@ -146,6 +156,8 @@ export default function RootLayout({
 				/>
 			</head>
 			<body className="font-sans antialiased" suppressHydrationWarning>
+				<StructuredData type="homepage" />
+				<ImageMetadata />
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="light"

@@ -21,6 +21,7 @@ import Image from "next/image";
 import { ManualTranslatedText } from "@/components/manual-translated-text";
 import { Navbar } from "@/components/navbar";
 import { ContactSection } from "@/components/contact-section";
+import { StructuredData } from "@/components/structured-data";
 import Head from "next/head";
 
 const allPosts = [
@@ -194,6 +195,7 @@ export default function PostsPage() {
 
 	return (
 		<>
+			<StructuredData type="posts" />
 			<Head>
 				<title>
 					All Posts - Su Su Htet | Financial Services & Insurance

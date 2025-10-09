@@ -4,6 +4,10 @@ Allow: /
 # Sitemap
 Sitemap: https://www.suhtet.info/sitemap.xml
 
+# Copyright Notice
+# All content © 2024 Su Htet. All rights reserved.
+# For licensing inquiries: susuhtet24@gmail.com
+
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
 
